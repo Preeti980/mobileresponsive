@@ -1,0 +1,58 @@
+body{
+  background-color:red;
+}
+/* it is old type of represent media queries */
+@media(max-width:400px){
+  body{
+    background-color:green;
+  }
+} 
+/* on the basis of width and it is in latest version */
+@media(width <= 400px){
+  body{
+    background-color:green;
+  }
+}
+@media(width <= 200px){ /* media queries width always write in decreasing order  like as first of all write 400px then 200px*/
+  body{
+    background-color:gold;
+  }
+}
+/* in min-width starting from 400 means 400 ke baad color ye kar do */
+@media(min-width:400px){
+  body{
+    background-color:green;
+  }
+} 
+/* on the basis of orentation*/
+@media(orientation:portrait){
+  body{
+    background-color:green;
+  }
+}
+/* use of and */
+@media(min-width:400px) and (max-width:600px){
+  body{
+    background-color:green;
+  }
+}
+/* min-width -----> starting from given width 
+ max-width --------> up to from given width */
+/* short form of above code */
+@media(400px <= width <= 600px){
+  body{
+    background-color:green;
+  }
+}
+/* media queries use in real word */
+/* media query for width <= 1024 */
+@media screen and (max-width : 1024px){
+  .container{
+    flex-direction:column;
+  }
+  .gallery{
+    width:100%;
+  }
+}
+
+
